@@ -1,0 +1,312 @@
+<!doctype html>
+
+
+<html lang="en">
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<link rel="icon" href="images/favicons/favicon.ico">
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<link rel="icon" href="images/favicons/favicon.svg" type="image/svg">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	
+	<title>Profile - Rodolphe Célestin — Product Design + Art Direction</title>
+
+	<meta name="description" content="Outside design, you'll find me on the tennis court, producing music for the music bands I play with, or går vilse i Sverige.">
+	<meta name="keywords" content="rodolphe celestin, product design, design, portfolio, work, UX design, UI design, UX reasearch, interface design, design system, art direction">
+	<meta name="author" content="Rodolphe Célestin">
+	<link rel="author" href="humans.txt">
+    <meta name="copyright" content="Rodolphe Célestin 2025">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+
+	<meta property="og:title" content="Profile - Rodolphe Célestin — Product Design + Art Direction">
+	<meta property="og:description" content="Outside design, you'll find me on the tennis court, producing music for the music bands I play with, or går vilse i Sverige.">
+	<meta property="og:image" content="images/thumbnails/profile-overview.png">
+	<meta property="og:type" content="website">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="js/lazy-load.js"></script>
+	<script rel="preload" src="https://unpkg.com/scrollreveal"></script>
+
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/style-init.css">
+	<link rel="stylesheet" href="css/style-fiche.css">
+	<link rel="stylesheet" href="css/style-profile.css">
+	
+	<link rel="stylesheet" href="css/swiper-profile.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+
+
+
+
+<body class="profile-body">
+
+
+
+
+
+<header>
+
+	<div class="main-nav-container">
+
+		<nav id="nav_hp">
+			<ul>
+				<li><a href="index.html" class="work-counter">Work</a></li>
+				<li><a href="all-projects.html">Repo</a></li>
+				<li><a href="profile.html" class="menu-active">Story</a></li>
+			</ul>
+		</nav>
+
+		<div class="rc-wrapper">
+			<div class="rc"><a href="index.html" aria-label="Go to homepage"></a></div>
+		</div>
+
+	</div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<!---------- Same block as homepage ---------->
+<div class="home">
+
+	<div class='homepage-header-wrapper' id="animateIntro">
+		
+		<div class='homepage-wrapper'>
+
+			<h1 class="name load-hidden">Rodolphe Célestin — Story</h1>				
+			<div class="intro load-hidden">
+				<div id="words" class="clickable"><h1>Reaching for <span class="highlight">the Sun</span></h1></div>
+			</div>
+
+			<script>
+			    (function () {
+			        var words = [
+						'Reaching for <span class="highlight">the Sun</span>',
+						'Reaching for <span class="highlight">Elements</span>',
+						'Reaching for <span class="highlight">the Invisible</span>',
+						'<span class="highlight">Jantelagen</span>'
+			            ],
+			            i = 0,
+			            intervalTime = 2500;
+
+			        // Function to change words with animation (for automatic scroll)
+			        function changeWordWithAnimation() {
+			            $('#words').fadeOut(function () {
+			                $(this).html('<h1>' + words[(i = (i + 1) % words.length)] + '</h1>').fadeIn();
+			            });
+			        }
+
+			        // Function to change words instantly without animation (for click)
+			        function changeWordWithoutAnimation() {
+			            i = (i + 1) % words.length; // Increment the index
+			            $('#words').html('<h1>' + words[i] + '</h1>'); // Change the word without animation
+			        }
+
+			        // Set interval to change words automatically with animation
+			        var interval = setInterval(changeWordWithAnimation, intervalTime);
+
+			        // On click, change the word immediately without animation
+			        $('#words').click(function () {
+			            clearInterval(interval); // Stop the automatic interval
+			            changeWordWithoutAnimation(); // Change the word immediately without animation
+			            interval = setInterval(changeWordWithAnimation, intervalTime); // Restart the interval
+			        });
+			    })();
+			</script>
+			
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+<div class="profile-cover load-hidden">
+	
+	<img src="images/profile/profile-introduction.png" alt="Photo of a sun in the sky at dawn while walking in the streets of Stockholm in Sweden" style="display: none;">
+
+	<div class="swiper-wrapper">
+
+		<div class="swiper">
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+		    <!-- Slides -->
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/00.png" data-highres="images/profile/00.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/01.png" data-highres="images/profile/01.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/02.png" data-highres="images/profile/02.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/03.png" data-highres="images/profile/03.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/04.png" data-highres="images/profile/04.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/05.png" data-highres="images/profile/05.png" alt=""></div>
+		    <div class="swiper-slide"><img class="lazy-image" src="images/profile/low/06.png" data-highres="images/profile/06.png" alt=""></div>
+		  </div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+<div class="profile-wrapper">
+
+	<div class="toggle-container">
+		<span class="label" style="display: none;">Outside design</span>
+        <label class="toggle">
+			<input type="checkbox" id="toggle-switch">
+			<span class="slider"></span>
+        </label>
+        <span class="label">Show design story instead</span>
+    </div>
+   
+    <div class="content" id="content1">
+
+	    <div class="profile-section">
+			<div class="profile-highlight"><p>Outside design, you'll find me on the tennis court, producing music for the music bands I play with, or går vilse i Sverige.</p></div>
+		</div>
+
+		<div class="profile-section">
+			<p>Music is a major part of my journey and  my state of mind, I'm driven by it. I started music at a very young age. Over the years I came accros different instruments and music style: <a href="https://www.youtube.com/watch?v=RY35O02Fg8M&ab_channel=rgmu101" target="_blank">brit-pop</a>,
+			<a href="https://www.youtube.com/watch?v=oRkA7ZFoIgQ&ab_channel=ClassicRockMachine" target="_blank">classic rock</a>,
+			<a href="https://www.youtube.com/watch?v=NVvAJhZVBTc&list=PLCinsKG59NIKOgIIva0YPNMuOcOLRKYzw&index=6&ab_channel=NineInchNails" target="_blank">industrial</a>,
+			<a href="https://www.youtube.com/watch?v=vM5U66XEe30&ab_channel=j%C5%93ybautista" target="_blank">depressive shoegaze</a>,
+			<a href="https://www.youtube.com/watch?v=iccYGKhPYgw&ab_channel=crdb89" target="_blank">rock</a>,
+			<a href="https://www.youtube.com/watch?v=P7vg7ir8jyc&ab_channel=NuclearBlastRecords" target="_blank">black metal</a>,
+			<a href="https://www.youtube.com/watch?v=xykzsokWVOQ&ab_channel=Myrkur-Topic" target="_blank">nordic spirit</a>...</p>
+			<p>But what stands out that I love is <a href="https://www.youtube.com/watch?v=uABaTw73PFU&ab_channel=AnnavonHausswolff" target="_blank">the pipe organ</a>. I secretly nourished a dream to play it one day.</p>
+			<p>Playing in music bands was then logical (as a drummer), but it's a human adventure with challenges that taught me a lot over the years. I love producing "things" in general, and that's why I came across producing music for some of the band I've been playing with, from recording to mixing and releasing.</p>
+			<p>My inspirations: Novak Djokovic, Atticus Ross, Trent Reznor...</p>
+		</div>
+
+    </div>
+
+    <div class="content" id="content2">
+		
+		<div class="profile-section">
+			<div class="profile-highlight"><p>With nearly 10 years of experience across diverse design fields — from Art Director in agencies to Product Designer in start-ups,</p></div>
+		</div>
+
+		<div class="profile-section">
+			<p>My passion for craft has impacted many brands and products with design. For me, design is also about being adaptive, empathetic, and curious—embracing diverse perspectives to foster collaboration and achieve shared goals. I thrive in collaborative workflows with diverse expertises to deliver the best product possible.</p>
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="profile-section" style="display: none;">
+		<div class="profile-highlight"><p>Outside design, you'll find me on the tennis court, producing music for the music bands I play with, or går vilse i Sverige.</p></div>
+	</div>
+
+	<div class="profile-section" style="display: none;">
+		<p>Music is a major part of my journey and  my state of mind, I'm driven by it. I started music at a very young age. Over the years I came accros different instruments and music style: <a href="https://www.youtube.com/watch?v=RY35O02Fg8M&ab_channel=rgmu101" target="_blank">brit-pop</a>,
+		<a href="https://www.youtube.com/watch?v=oRkA7ZFoIgQ&ab_channel=ClassicRockMachine" target="_blank">classic rock</a>,
+		<a href="https://www.youtube.com/watch?v=NVvAJhZVBTc&list=PLCinsKG59NIKOgIIva0YPNMuOcOLRKYzw&index=6&ab_channel=NineInchNails" target="_blank">industrial</a>,
+		<a href="https://www.youtube.com/watch?v=vM5U66XEe30&ab_channel=j%C5%93ybautista" target="_blank">depressive shoegaze</a>,
+		<a href="https://www.youtube.com/watch?v=iccYGKhPYgw&ab_channel=crdb89" target="_blank">rock</a>,
+		<a href="https://www.youtube.com/watch?v=P7vg7ir8jyc&ab_channel=NuclearBlastRecords" target="_blank">black metal</a>,
+		<a href="https://www.youtube.com/watch?v=xykzsokWVOQ&ab_channel=Myrkur-Topic" target="_blank">nordic spirit</a>...</p>
+		<p>But what stands out that I love is <a href="https://www.youtube.com/watch?v=uABaTw73PFU&ab_channel=AnnavonHausswolff" target="_blank">the pipe organ</a>. I secretly nourished a dream to play it one day.</p>
+		<p>Playing in music bands was then logical (as a drummer), but it's a human adventure with challenges that taught me a lot over the years. I love producing "things" in general, and that's why I came across producing music for some of the band I've been playing with, from recording to mixing and releasing.</p>
+		<p>My inspirations: Novak Djokovic, Atticus Ross, Trent Reznor...</p>
+	</div>
+
+	<div class="profile-section">
+		<p>Like what you see so far? <a href="https://www.linkedin.com/in/rodolphe-celestin/" target="_blank">Let's connect</a> for more.</p>
+	</div>
+
+</div>
+
+
+
+
+
+<div class="footer-about">
+
+	<div class="bio">
+
+		<div class="wrapper-footer">
+
+			<div class="footer-name"><p>Rodolphe Célestin — Product Design + Art Direction</p></div>
+			
+			<div class="intro-footer">
+				<p><a href="index.html">Selected work</a></p>
+			</div>
+		
+		</div>
+
+	</div>
+
+	<div class="closing closing-no-margin">
+
+		<div class="closing-wrap">
+		
+			<ul>
+				<li><a href="all-projects.html">Repo</a></li>
+				<li><a href="https://www.linkedin.com/in/rodolphe-celestin/" target="_blank">LinkedIn</a></li>
+				<li><a href="https://read.cv/rodolphecelestin" target="_blank">read.cv</a></li>
+			</ul>
+			
+			<div class="copyright">
+				<p>© 2025 • All content, assets & artworks belong to their owner.<br>Design & code by Rodolphe Célestin.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+<script src="js/toggle-switch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="js/scroll-animation.js"></script>
+<script>
+	ScrollReveal().reveal('.name', { delay: 100, duration: 1200 });
+	ScrollReveal().reveal('.intro', { delay: 200, duration: 1200 });
+	ScrollReveal().reveal('.profile-cover', { delay: 250, duration: 1500, distance: '20px'});
+</script>
+<script type="text/javascript">
+    var swiper = new Swiper(".swiper", {
+      effect: "cards",
+      grabCursor: true,
+      clickable: true,
+            autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+		dynamicBullets: true,
+		loop: true,
+    });
+</script>
+
+</body>
+
+</html>

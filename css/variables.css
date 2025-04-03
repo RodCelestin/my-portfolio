@@ -1,0 +1,60 @@
+:root {
+
+	/* Backgrounds */
+	--background-base: #FFF;
+
+	/* Text */
+	--text-primary: #101828;
+	--text-secondary: #667085;
+	--text-terciary: #A1A0A7;
+	--text-link-underline: #CBCACE;
+	--text-primary-inverted: #FFF;
+
+	/* UI */
+	--ui-primary: #030014;
+	--ui-secondary: #CBCACE;
+	--ui-divider: #EAECF0;
+	--ui-outline: #EAECF0;
+	--ui-primary-inverted: #FFF;
+
+	/* Assets */
+	--asset-placeholder: #F5F5F7;
+	--asset-placeholder-v2: hsl(240 11% 95% / 1);
+	--asset-background-mobile: #000;
+	--asset-border-mobile: #47464B;
+
+	/* border-radius  */
+	--rounded-base: 8px;
+	--rounded-m: 14px;
+	--rounded-l: 18px;
+
+}
+
+
+
+:root.dark-mode {
+	
+	/* Backgrounds */
+	--background-base: #191919;
+
+	/* Text */
+	--text-primary: #fff;
+	--text-secondary: #CACACA;
+	--text-terciary: #BEBEBE;
+	--text-link-underline: #EDEDED;
+	--text-primary-inverted: #0C0C0C;
+
+
+	/* UI */
+	--ui-primary: #E0E0E2;
+	--ui-secondary: #D6D6D6;
+	--ui-divider: #BDBDBD;
+	--ui-outline: #BDBDBD;
+	--ui-primary-inverted: #24CF4A;
+
+
+	/* Assets */
+	--asset-placeholder: #383838;
+	--asset-background-mobile: #000;
+	--asset-border-mobile: #47464B;
+}

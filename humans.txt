@@ -1,0 +1,12 @@
+/* TEAM */
+
+Name: Rodolphe Célestin
+Role: Design, code, writing
+Location: Paris, France - Stockholm, Sweden
+
+
+/* ABOUT */
+                  
+Last update: January 2025
+Standards: HTML5, CSS3, JS
+Components: No framework used

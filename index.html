@@ -1,0 +1,476 @@
+<!doctype html>
+
+
+<html lang="en">
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<link rel="icon" href="images/favicons/favicon.ico">
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<link rel="icon" href="images/favicons/favicon.svg" type="image/svg">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+
+	<title>Rodolphe Célestin — Product Design + Art Direction</title>
+
+	<meta name="description" content="Hi, I am Product Designer, a generalist focused on craft, inspired by systems, users, Nature & movement.">
+	<meta name="keywords" content="rodolphe celestin, product designer, design, portfolio, work, UX design, UI design, UX reasearch, interface design, design system, art direction">
+	<meta name="author" content="Rodolphe Célestin">
+	<link rel="author" href="humans.txt">
+    <meta name="copyright" content="Rodolphe Célestin 2025">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+
+	<meta property="og:title" content="Rodolphe Célestin — Product Design + Art Direction">
+	<meta property="og:description" content="Hi, I am Product Designer, a generalist focused on craft, inspired by systems, users, Nature & movement.">
+	<meta property="og:image" content="images/thumbnails/overview.png">
+	<meta property="og:type" content="website">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="js/script_scroll_hp.js"></script>
+	<script rel="preload" src="https://unpkg.com/scrollreveal"></script>
+
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/style-init.css" defer>
+
+</head>
+
+
+<body>
+
+
+
+
+
+<header>
+
+	<div class="main-nav-container">
+
+		<nav id="nav_hp">
+			<ul>
+				<li><a href="index.html" class="menu-active work-counter">Work</a></li>
+				<li><a href="all-projects.html">Repo</a></li>
+				<li><a href="profile.html">Story</a></li>
+			</ul>
+		</nav>
+
+		<div class="availability-banner-wrapper">
+			<a href="https://www.linkedin.com/in/rodolphe-celestin/" target="_blank">
+				<div class="availability-banner">
+					<div class="availability-status"><p>Available now</p></div>
+					<div class="contact-me">Contact me</div>
+				</div>
+			</a>
+		</div>
+
+		<button id="dark-mode-toggle" style="display: none;">Toggle Dark Mode</button>
+
+		<div class="rc-wrapper">
+			<div class="rc"><a href="index.html" aria-label="Go to homepage"></a></div>
+		</div>
+
+	</div>
+
+</header>
+
+
+
+
+
+<div class="start-wrapper">
+	<div id="start"><a href="louvre.html">Start journey</a></div>
+</div>
+
+
+
+
+
+
+
+<div class="home">
+
+	<div class='homepage-header-wrapper' id="animateIntro">
+		
+		<div class='homepage-wrapper'>
+
+			<h1 class="name load-hidden">Rodolphe Célestin — Product Design + Art Direction</h1>
+
+			<div class="intro load-hidden">
+				<div id="words" class="clickable"><h1>Inspired by <span class="highlight">Systems</span></h1></div>
+			</div>
+
+			<script>
+			    (function () {
+			        var words = [
+						'Inspired by <span class="highlight">Systems</span>',
+						'Inspired by <span class="highlight">Users</span>',
+						'Inspired by <span class="highlight">Engineering</span>',
+						'Inspired by <span class="highlight">Nature</span>',
+						'Inspired by <span class="highlight">Movement</span>',
+						'Inspired by <span class="highlight">the Now</span>',
+						'Inspired by <span class="highlight">your Story</span>'
+			            ],
+			            i = 0,
+			            intervalTime = 2500;
+
+			        // Function to change words with animation (for automatic scroll)
+			        function changeWordWithAnimation() {
+			            $('#words').fadeOut(function () {
+			                $(this).html('<h1>' + words[(i = (i + 1) % words.length)] + '</h1>').fadeIn();
+			            });
+			        }
+
+			        // Function to change words instantly without animation (for click)
+			        function changeWordWithoutAnimation() {
+			            i = (i + 1) % words.length; // Increment the index
+			            $('#words').html('<h1>' + words[i] + '</h1>'); // Change the word without animation
+			        }
+
+			        // Set interval to change words automatically with animation
+			        var interval = setInterval(changeWordWithAnimation, intervalTime);
+
+			        // On click, change the word immediately without animation
+			        $('#words').click(function () {
+			            clearInterval(interval); // Stop the automatic interval
+			            changeWordWithoutAnimation(); // Change the word immediately without animation
+			            interval = setInterval(changeWordWithAnimation, intervalTime); // Restart the interval
+			        });
+			    })();
+			</script>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+<div class="selected-work load-hidden" id="animateSelected"><p>Selected work</p><div class="update"><p>Last updated, January 2025</p></div></div>
+<div class="scroll-indicator load-hidden" id="animateScrollIndicator"></div>
+
+
+
+
+
+<a href="louvre.html" style="display: contents;" class="navigate-link">
+
+	<div class="section-project section-project-reveal load-hidden">
+
+		<div class="project-card louvre safe-bottom" id="louvre">
+			<video data-src="images/covers/louvre-cover.mp4" poster="images/covers/louvre-cover-poster.png" autoplay="" muted="" loop="" playsinline="" src="images/covers/louvre-cover.mp4" data-was-processed="true" width="100" style="opacity: 1;"></video>
+		</div>
+	
+		<div class="project-name-wrapper-homepage">
+						
+			<div class="project-description" id="animate-project-description-louvre">
+				<h1>Louvre Museum</h1>
+				<h2>Cultural platform</h2>
+			</div>
+
+			<div class="project-description-content">
+				<p>Breaking down the complexity and intimidation of the museum to enhance the visitor experience.</p>
+				<ul class="pills">
+					<li class="pill">End-to-end design</li>
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+
+</a>
+
+
+
+
+
+<div class="inspiration-wrapper-project">
+
+	<div class="edito-break">
+		<h1>From creating design systems for organisations,</h1>	
+		<h2>To prototyping for user understanding.</h2>
+	</div>
+	
+</div>
+
+
+
+
+
+<a href="chanel.html" style="display: contents;">
+
+	<div class="section-project">
+
+		<div class="project-card" id="chanel">
+				<video data-src="images/covers/chanel-cover.mp4" poster="images/covers/chanel-cover-poster.png" autoplay="" muted="" loop="" playsinline="" src="images/covers/chanel-cover.mp4" data-was-processed="true" width="100"></video>
+		</div>
+	
+		<div class="project-name-wrapper-homepage">
+			
+			<div class="project-description">
+				<h1>Chanel</h1>
+				<h2>Virtual Try-On</h2>
+			</div>
+
+			<div class="project-description-content">
+				<p>From research to prototyping, this project aims to create a design vision that reimagines way to shop makeup.</p>
+				<ul class="pills">
+					<li class="pill">User Research</li>
+					<li class="pill">Prototyping</li>
+					<li class="pill">Proof of Concept</li>
+				</ul>
+			</div>
+		
+		</div>
+
+	</div>
+
+</a>
+
+
+
+
+
+<div class="inspiration-wrapper-project">
+
+	<div class="edito-break">
+		<div class="skills"><h1>Designing for users & businesses,</h1></div>
+		<div class="moreskills"><h2>Focusing on evolving solutions and scalability.</h2></div>		
+	</div>
+	
+</div>
+
+
+
+
+
+<a href="dior.html" style="display: contents;">
+
+	<div class="section-project">
+
+		<div class="project-card" id="dior">
+			<img src="images/covers/dior-cover-poster.png" alt="">
+		</div>
+	
+		<div class="project-name-wrapper-homepage">
+				
+			<div class="project-description">
+				<h1>DIOR</h1>
+				<h2>E-commerce platform</h2>
+			</div>
+
+			<div class="project-description-content">
+				<p>Connecting two distinct companies to create a platform that brings together their creative energies.</p>
+				<ul class="pills">
+					<li class="pill">UX/UI Design</li>
+				</ul>
+			</div>
+		
+		</div>
+
+	</div>
+
+</a>
+
+
+
+
+
+<div class="inspiration-wrapper-project">
+
+	<div class="edito-break">
+		<div class="skills"><h1>Thinking interface with motion,</h1></div>
+		<div class="moreskills"><h2>Expressing user flows and user interaction.</h2></div>
+	</div>
+	
+</div>
+
+
+
+
+
+<a href="balmain.html" style="display: contents;">
+
+	<div class="section-project">
+
+		<div class="project-card" id="balmain">
+			<video data-src="images/covers/balmain-cover.mp4" poster="images/covers/balmain-cover-poster.png" autoplay="" muted="" loop="" playsinline="" src="images/covers/balmain-cover.mp4" data-was-processed="true" width="100"></video>
+		</div>
+	
+		<div class="project-name-wrapper-homepage">
+						
+			<div class="project-description">
+				<h1>Balmain</h1>
+				<h2>Mobile app.</h2>
+			</div>
+
+			<div class="project-description-content">
+				<p>A new way to engage & connect people with a company's project and values.</p>
+				<ul class="pills">
+					<li class="pill">UX/UI Design</li>
+					<li class="pill">Art direction</li>
+				</ul>
+			</div>		
+		
+		</div>
+
+	</div>
+
+</a>
+
+
+
+
+
+
+<div class="inspiration-wrapper-project">
+
+	<div class="edito-break">
+		<div class="skills"><h1>Expertises & capabilities</h1></div>
+		<div class="skill-list">
+			<ul class="pills-xl">
+				<li class="pill-xl">Product Design</li>
+				<li class="pill-xl">UX/UI Design</li>
+				<li class="pill-xl">Design System</li>
+				<li class="pill-xl">Responsive Design</li>
+				<li class="pill-xl">Prototyping</li>
+				<li class="pill-xl">User Research</li>
+				<li class="pill-xl">Front-end dev.</li>
+				<li class="pill-xl">Art Direction</li>
+				<li class="pill-xl">Brand Design</li>
+				<li class="pill-xl">& more</li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+<div class="inspiration-wrapper-project">
+
+	<div class="edito-break">
+		<div class="skills"><h1>Consilitating product and brand expression,</h1></div>
+		<div class="moreskills"><h2>Expressing user flows and user interaction.</h2></div>
+	</div>
+	
+</div>
+
+
+
+
+<a href="operadeparis-pop.html" style="display: contents;">
+
+	<div class="section-project">
+
+		<div class="project-card" id="odpstreaming">
+			<video data-src="images/covers/operadeparis-pop-cover.mp4" poster="images/covers/operadeparis-pop-cover-poster.png" autoplay="" muted="" loop="" playsinline="" src="images/covers/operadeparis-pop-cover.mp4" data-was-processed="true" width="100"></video>
+		</div>
+	
+		<div class="project-name-wrapper-homepage">
+				
+			<div class="project-description">
+				<h1>Opéra de Paris</h1>
+				<h2>Streaming platform</h2>
+			</div>
+
+			<div class="project-description-content">
+				<p>Making the opera accessible to anyone thanks to a new streaming platform dedicated to culture.</p>
+				<ul class="pills">
+					<li class="pill">End-to-end design</li>
+					<li class="pill">Art direction</li>
+				</ul>
+			</div>
+		
+		</div>
+
+	</div>
+
+</a>
+
+
+
+
+
+<div class="footer-about">
+
+	<div class="bio">
+
+		<div class="wrapper-footer">
+
+			<div class="footer-name"><p>Rodolphe Célestin — Product Design + Art Direction</p></div>
+			
+			<div class="intro-footer">
+				<p><a href="all-projects.html">Browse Repository</a></p>
+			</div>
+		
+		</div>
+
+	</div>
+
+	<div class="closing">
+
+		<div class="closing-wrap">
+		
+			<ul>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="https://www.linkedin.com/in/rodolphe-celestin/" target="_blank">LinkedIn</a></li>
+				<li><a href="https://read.cv/rodolphecelestin" target="_blank">read.cv</a></li>
+			</ul>
+			
+			<div class="copyright">
+				<p>© 2025 • All content, assets & artworks belong to their owner.<br>Design & code by Rodolphe Célestin.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/scroll-animation.js"></script>
+<script>
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Only execute parallax if window width is greater than 800px
+    if (window.innerWidth > 800) {
+        // Select all inspiration wrapper sections
+        const inspirationWrappers = document.querySelectorAll('.inspiration-wrapper-project');
+
+        // Apply parallax effect to each wrapper
+        inspirationWrappers.forEach(wrapper => {
+            gsap.to(wrapper, {
+                scrollTrigger: {
+                    trigger: wrapper,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 0,
+                },
+                y: '50vh',
+                ease: "none"
+            });
+        });
+    }
+
+    // Existing ScrollReveal code
+    ScrollReveal().reveal('.name', { delay: 100, duration: 1200 });
+    ScrollReveal().reveal('.intro', { delay: 200, duration: 1200 });
+    ScrollReveal().reveal('.section-project-reveal', { delay: 250, duration: 1500, distance: '20px'});
+    ScrollReveal().reveal('.scroll-indicator', { delay: 270, duration: 1500, distance: '28px'});
+</script>
+
+</body>
+
+</html>

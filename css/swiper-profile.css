@@ -1,0 +1,59 @@
+.swiper {
+	aspect-ratio: 1 / 1;
+	width: 540px;
+}
+
+.swiper-slide {
+	border-radius: 18px;
+	overflow: hidden;
+	object-fit: cover;
+	background-color: red;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.20);
+	display: flex !important;
+}
+
+
+
+
+
+/* -------------------- RESPONSIVE DESIGN < 800 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 800 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 800 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 800 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 800 -------------------- */
+
+@media screen and (max-width: 800px) {
+
+	.swiper {
+		aspect-ratio: 4 / 5;
+		width: 340px;
+	}
+
+	.swiper-slide {
+		border-radius: 12px;
+	}
+
+}
+
+
+
+
+
+/* -------------------- RESPONSIVE DESIGN < 450 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 450 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 450 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 450 -------------------- */
+/* -------------------- RESPONSIVE DESIGN < 450 -------------------- */
+
+@media screen and (max-width: 450px) {
+
+	.swiper {
+		aspect-ratio: 4 / 5;
+		width: 240px ;
+	}
+
+	.swiper-slide {
+		border-radius: 12px;
+	}
+
+}
